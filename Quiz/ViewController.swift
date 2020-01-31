@@ -16,33 +16,35 @@ class ViewController: UIViewController {
     
     let questions: [String] = [
         "What is a question?",
-        "Is this a question?"
+        "Is this a question?",
+        "Who is the fairest of them all?"
     ]
     
     let answers: [String] = [
-        "What is a question?",
-        "Is this a question?"
+        "It's this.",
+        "Yes it is.",
+        "Pratu"
     ]
     
     var currentQuestionIndex: Int = 0
     
-    
+    // PDF-41 for Reference
     @IBAction func showNextQuestion(_ sender: UIButton){
         os_log("Showing Next Question...")
-        currentQuestionIndex+1
+        currentQuestionIndex+=1
         if currentQuestionIndex == questions.count{
             currentQuestionIndex = 0
         }
-        
         let question: String = questions[currentQuestionIndex]
         questionLabel.text = question
-        //Pickup to Complete Here
+        answerLabel.text = "???"
     }
     
     @IBAction func showAnswer(_ sender: UIButton){
         os_log("Showing the Answer...")
-        
         //Mirror from Question segments
+        let answer: String = answers[currentQuestionIndex]
+        answerLabel.text = answer
     }
     
     //Pre-connection, an empty circle replacing the line number signifies the need for connection to an object in the storyboard
@@ -52,7 +54,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         os_log("Load Complete...")
         //customLog allows for defining packages in order to organize the log system for clarity later on.
-        
         questionLabel.text = questions[currentQuestionIndex]
         //answerLabel.text = "Is Question"
     }
