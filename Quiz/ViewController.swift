@@ -15,15 +15,15 @@ class ViewController: UIViewController {
     
     
     let questions: [String] = [
-        "What is a question?",
+        "What is Nepal's capital city?",
         "Is this a question?",
-        "Who is the fairest of them all?"
+        "What's the name of the Lone Ranger's nephew's horse?"
     ]
     
     let answers: [String] = [
-        "It's this.",
-        "Yes it is.",
-        "Pratu"
+        "Kathmandu.",
+        "Yes, it is.",
+        "Victor."
     ]
     
     var currentQuestionIndex: Int = 0
