@@ -16,14 +16,12 @@ class ViewController: UIViewController {
     
     let questions: [String] = [
         "What is Nepal's capital city?",
-        "Is this a question?",
         "What's the name of the Lone Ranger's nephew's horse?",
         "If a tree falls in the woods and only Macho Man Randy Savage is holding geosynchronus orbit, can this ridiculous amount of characters be displayed?"
     ]
     
     let answers: [String] = [
         "Kathmandu.",
-        "Yes, it is.",
         "Victor.",
         "We did eventually figure out the line line limits so yes, but only to a a degree determined by the text box size and further constraints."
     ]
