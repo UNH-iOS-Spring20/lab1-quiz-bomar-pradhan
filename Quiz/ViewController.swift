@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    
     let questions: [String] = [
         "What is Nepal's capital city?",
         "What's the name of the Lone Ranger's nephew's horse?",
